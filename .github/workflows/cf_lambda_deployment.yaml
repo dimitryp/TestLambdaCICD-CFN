@@ -24,4 +24,5 @@ jobs:
         run: |
           aws cloudformation deploy \
             --template-file templates/mylambda-cfn.yaml \
-            --stack-name dp-lambda-cfn
+            --stack-name dp-lambda-cfn \
+            --capabilities CAPABILITY_IAM
